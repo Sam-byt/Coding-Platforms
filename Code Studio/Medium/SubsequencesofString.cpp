@@ -17,12 +17,6 @@ void solve(string &str, int n,vector<string> &ans, string s)
 
 
 
-
-
-
-
-
-
 vector<string> subsequences(string str){
 	
 	// Write your code here
