@@ -25,23 +25,20 @@ class Solution{
             }
         }
 
-        int low = INT_MAX,flag = 1;
+        int low = INT_MAX;
+        
+        //checking only last row for validation
 
         for(int i=0;i<sum+1;i++)
         {
-            for(int j=0;j<n+1;j++)
+            if(t[n][i] == true)
             {
-                if(t[j][i] == true){
-                    
-                    if(abs(i - (sum - i))<low)low = abs(2*i - sum);
-                    else {flag == 0;break;}
-                }
+                if(abs(i - (sum - i))<low)low = abs(2*i - sum);
+                else break;
             }
-
-            if(flag == 0)break;
         }
-
-    return low;
+  
+    	return low;
 	    
 	} 
 };
