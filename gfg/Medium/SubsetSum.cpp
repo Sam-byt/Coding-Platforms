@@ -55,6 +55,7 @@ int main()
         
         Solution ob;
         cout << ob.isSubsetSum(N, arr, sum) << endl;
+     
     }
     return 0; 
 } 
