@@ -11,21 +11,19 @@ public:
         // Write Your Code here
         int a = N;
         
-        bool flag = true;
         
         int index = 0;
         
         
         while(a>0){
             if(!(a&1)){
-                flag = false;
-                break;
+                return N|(1<<index);
             }
             a>>=1;
             index++;
         }
         
-        return flag?N:N|(1<<index);
+        return N;
     }
 };
 
