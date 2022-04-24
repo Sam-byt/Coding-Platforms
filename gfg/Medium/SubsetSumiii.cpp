@@ -19,7 +19,7 @@ public:
         
         int n = arr.size();
         
-        for(int i=0; i<n+1 ; i++){
+        for(int i=1; i<n+1 ; i++){
             for(int j=0; j<sum+1; j++){
                 if(j == 0)curr[j] = true;
                 else{
