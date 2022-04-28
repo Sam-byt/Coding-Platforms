@@ -26,6 +26,6 @@ public:
                 t[i][j+1] = j<0?max(1+t[i+1][i+1],t[i+1][j+1]):(nums[i]>nums[j]?max(1+t[i+1][i+1],t[i+1][j+1]):t[i+1][j+1]); 
         }
         
-        return t[0][-1+1];
+        return t[0][-1+1]; 
     }
 };
